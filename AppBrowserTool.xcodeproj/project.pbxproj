@@ -12,16 +12,19 @@
 		681642671CF862A9001140E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681642651CF862A9001140E9 /* Main.storyboard */; };
 		681642691CF862A9001140E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681642681CF862A9001140E9 /* Assets.xcassets */; };
 		6816426C1CF862A9001140E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6816426A1CF862A9001140E9 /* LaunchScreen.storyboard */; };
+		8C20DEB01F87EA4200E80521 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C20DEAF1F87EA4200E80521 /* Default-568h@2x.png */; };
+		8C20DEB11F87EB8D00E80521 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6816426D1CF862A9001140E9 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6816425E1CF862A9001140E9 /* WebviewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebviewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6816425E1CF862A9001140E9 /* AppBrowserTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBrowserTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		681642611CF862A9001140E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		681642631CF862A9001140E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		681642661CF862A9001140E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		681642681CF862A9001140E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6816426B1CF862A9001140E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6816426D1CF862A9001140E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6816426D1CF862A9001140E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AppBrowserTool/Info.plist; sourceTree = SOURCE_ROOT; };
+		8C20DEAF1F87EA4200E80521 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +41,8 @@
 		681642551CF862A9001140E9 = {
 			isa = PBXGroup;
 			children = (
-				681642601CF862A9001140E9 /* WebviewSample */,
+				8C20DEAF1F87EA4200E80521 /* Default-568h@2x.png */,
+				681642601CF862A9001140E9 /* AppBrowserTool */,
 				6816425F1CF862A9001140E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +50,12 @@
 		6816425F1CF862A9001140E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6816425E1CF862A9001140E9 /* WebviewSample.app */,
+				6816425E1CF862A9001140E9 /* AppBrowserTool.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		681642601CF862A9001140E9 /* WebviewSample */ = {
+		681642601CF862A9001140E9 /* AppBrowserTool */ = {
 			isa = PBXGroup;
 			children = (
 				681642611CF862A9001140E9 /* AppDelegate.swift */,
@@ -61,15 +65,15 @@
 				6816426A1CF862A9001140E9 /* LaunchScreen.storyboard */,
 				6816426D1CF862A9001140E9 /* Info.plist */,
 			);
-			path = WebviewSample;
+			path = AppBrowserTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6816425D1CF862A9001140E9 /* WebviewSample */ = {
+		6816425D1CF862A9001140E9 /* AppBrowserTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 681642701CF862A9001140E9 /* Build configuration list for PBXNativeTarget "WebviewSample" */;
+			buildConfigurationList = 681642701CF862A9001140E9 /* Build configuration list for PBXNativeTarget "AppBrowserTool" */;
 			buildPhases = (
 				6816425A1CF862A9001140E9 /* Sources */,
 				6816425B1CF862A9001140E9 /* Frameworks */,
@@ -79,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = WebviewSample;
+			name = AppBrowserTool;
 			productName = WebviewSample;
-			productReference = 6816425E1CF862A9001140E9 /* WebviewSample.app */;
+			productReference = 6816425E1CF862A9001140E9 /* AppBrowserTool.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,15 +95,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = GuruSoft;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Hearst;
 				TargetAttributes = {
 					6816425D1CF862A9001140E9 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
-			buildConfigurationList = 681642591CF862A9001140E9 /* Build configuration list for PBXProject "WebviewSample" */;
+			buildConfigurationList = 681642591CF862A9001140E9 /* Build configuration list for PBXProject "AppBrowserTool" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6816425D1CF862A9001140E9 /* WebviewSample */,
+				6816425D1CF862A9001140E9 /* AppBrowserTool */,
 			);
 		};
 /* End PBXProject section */
@@ -123,7 +128,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6816426C1CF862A9001140E9 /* LaunchScreen.storyboard in Resources */,
+				8C20DEB01F87EA4200E80521 /* Default-568h@2x.png in Resources */,
 				681642691CF862A9001140E9 /* Assets.xcassets in Resources */,
+				8C20DEB11F87EB8D00E80521 /* Info.plist in Resources */,
 				681642671CF862A9001140E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +183,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -221,8 +230,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -241,6 +252,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -249,11 +261,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WebviewSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AppBrowserTool/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gurusoft.WebviewSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hearst.gin.AppBrowserTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -261,18 +274,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WebviewSample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AppBrowserTool/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gurusoft.WebviewSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hearst.gin.AppBrowserTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		681642591CF862A9001140E9 /* Build configuration list for PBXProject "WebviewSample" */ = {
+		681642591CF862A9001140E9 /* Build configuration list for PBXProject "AppBrowserTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6816426E1CF862A9001140E9 /* Debug */,
@@ -281,7 +295,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		681642701CF862A9001140E9 /* Build configuration list for PBXNativeTarget "WebviewSample" */ = {
+		681642701CF862A9001140E9 /* Build configuration list for PBXNativeTarget "AppBrowserTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				681642711CF862A9001140E9 /* Debug */,

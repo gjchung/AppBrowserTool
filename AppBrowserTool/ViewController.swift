@@ -14,8 +14,8 @@ class ViewController: UIViewController , UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let webUrl : NSURL = NSURL(string: "https://iosdevcenters.blogspot.com/")!
-        let webRequest : NSURLRequest = NSURLRequest(URL: webUrl)
+        let webUrl : URL = URL(string: "http://cosmopolitan.fre-hdm.docker/video/c383d78c-48f3-499b-ae58-cc926803c0c3/")!
+        let webRequest : URLRequest = URLRequest(url: webUrl)
         webViewFullScreen.loadRequest(webRequest)
     }
 
@@ -25,16 +25,16 @@ class ViewController: UIViewController , UIWebViewDelegate {
     
     //MARK:- UIWebViewDelegate Method
     
-    func webViewDidStartLoad(webView: UIWebView) {
+    func webViewDidStartLoad(_ webView: UIWebView) {
         print("Strat Loading")
     }
-    func webViewDidFinishLoad(webView: UIWebView) {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
         print("Finish Loading")
     }
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
-        print(error?.localizedDescription)
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        print(error.localizedDescription)
     }
-    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         return true
     }
 }

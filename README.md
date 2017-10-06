@@ -1,6 +1,7 @@
-# WebviewSample-
+# App Browser Testing Tool
 
-This tutorial provide how to load URL in UIWebView in Swift : See more for steps : https://iosdevcenters.blogspot.com/2016/04/creating-simple-browser-with-uiwebview.html
+1. Go to the AppBrowserTool directory and open the ViewController.swift file.
+2. Change the "webUrl" variable.
+3. Hit the play button to build and run the app.
 
-
-WebviewSample in Swift
+ 
